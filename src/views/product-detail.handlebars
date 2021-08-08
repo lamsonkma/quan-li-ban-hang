@@ -1,0 +1,204 @@
+<div class="section">
+    <div class="product-detail-main">
+        <div class="box">
+            <div class="breadcrumb">
+                <a href="/">Trang chủ</a>
+                <span><i class='bx bxs-chevrons-right'></i></span>
+                <a href="#">{{data.[0].category}}</a>
+                <span><i class='bx bxs-chevrons-right'></i></span>
+                <a href="#">{{data.[0].producer}}</a>
+            </div>
+        </div>
+        <div class="row">
+            {{#each data}}
+            <div class="col-7">
+                <div class="img-container">
+                    <div class="product-img" id="product-img">
+                        <img src={{this.image.[0]}} alt="">
+                    </div>
+                    <div class="box">
+                        <div class="product-img-list">
+                            {{#each this.image}}
+                            <div class="product-img-item">
+                                <img src={{.}} alt="">
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="product-detail-infos">
+                    <div class="product-info-name">
+                        <h1>{{this.name}}</h1>
+                    </div>
+                    <div class="product-info-detail">
+                        <span class="product-info-detail-title">Nhà Sản Xuất:{{this.producer}}</span>
+                        <div class="rating product-info-detail-rating">
+                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                        </div>
+                        <p class="product-info-detail-description">
+                            {{this.description}}
+                        </p>
+                        <div class="product-info">
+                            <p class="price-curent">{{this.price}}₫</p>
+                            <span>*</span>
+                            <p class="price-old">{{this.price}}₫</p>
+                            <span class="percent">-6%</span>
+                        </div>
+                        {{!-- <div class="product-quantity-wrapper">
+                            <span class="product-quantity-btn">
+                                <i class='bx bx-minus-circle'></i>
+                            </span>
+                            <span class="product-quantity">0</span>
+                            <span class="product-quantity-btn">
+                                <i class='bx bx-plus-circle'></i>
+                            </span>
+                        </div> --}}
+                        <div class="btn-add-cart">
+                            <button onclick="addToCart('{{this._id}}')"><span>Thêm vào giỏ hàng</span> <i class='bx bx-check-circle'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="section-header">Sản phẩm tương tự</div>
+    <div class="owl-carousel owl-theme list-product">
+        {{#each offer}}
+        <div class="product-item">
+            <div class="item-img">
+                <img src={{this.image.[0]}} alt="">
+            </div>
+            <div class="product-infos">
+                <div class="product-title delay-2">{{this.name}}</div>
+                <div class="product-info delay-2">
+                    <p class="price-old">{{this.price}}₫</p>
+                    <span class="percent">-6%</span>
+                </div>
+                <p class="price-curent delay-2">{{this.price}}₫</p>
+                <div class="product-rating delay-2">
+                    <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                    <p class="product-rating-total">120</p>
+                </div>
+                <div class="btn-hover delay-2">
+                    <a href="/product?category={{this.category}}&id={{this._id}}">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<div class="section">
+    <div class="box">
+        <div class="box-header">
+            review
+        </div>
+        <div class="user-rate">
+            <div class="user-infor">
+                <div class="user-avatar">
+                    <img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t1.6435-9/45163731_2149953281935907_2745995870502649856_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=b_hwWUpAcg4AX_7cddl&_nc_ht=scontent-hkt1-2.xx&oh=bc083b4602a63a7bd40f246bc5b14105&oe=60FE23A6"
+                        alt="">
+                </div>
+                <div class="user-name">
+                    <span>Nguyễn lam sơn</span>
+                    <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="user-content">
+                Dạ trường hợp này nếu sản phẩm mình mua bên em thì mình mang sản phẩm ra
+                siêu thị để bên em kiểm tra và gửi hãng thẩm định trước đã nha,
+                nếu thay được thì sẽ thông tin về cho mình mức giá cụ thể sau ạ.
+            </div>
+        </div>
+        <div class="user-rate">
+            <div class="user-infor">
+                <div class="user-avatar">
+                    <img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t1.6435-9/45163731_2149953281935907_2745995870502649856_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=b_hwWUpAcg4AX_7cddl&_nc_ht=scontent-hkt1-2.xx&oh=bc083b4602a63a7bd40f246bc5b14105&oe=60FE23A6"
+                        alt="">
+                </div>
+                <div class="user-name">
+                    <span>Nguyễn lam sơn</span>
+                    <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="user-content">
+                Dạ trường hợp này nếu sản phẩm mình mua bên em thì mình mang sản phẩm ra
+                siêu thị để bên em kiểm tra và gửi hãng thẩm định trước đã nha,
+                nếu thay được thì sẽ thông tin về cho mình mức giá cụ thể sau ạ.
+            </div>
+        </div>
+        <div class="user-rate">
+            <div class="user-infor">
+                <div class="user-avatar">
+                    <img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t1.6435-9/45163731_2149953281935907_2745995870502649856_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=b_hwWUpAcg4AX_7cddl&_nc_ht=scontent-hkt1-2.xx&oh=bc083b4602a63a7bd40f246bc5b14105&oe=60FE23A6"
+                        alt="">
+                </div>
+                <div class="user-name">
+                    <span>Nguyễn lam sơn</span>
+                    <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                </div>
+            </div>
+            <div class="user-content">
+                Dạ trường hợp này nếu sản phẩm mình mua bên em thì mình mang sản phẩm ra
+                siêu thị để bên em kiểm tra và gửi hãng thẩm định trước đã nha,
+                nếu thay được thì sẽ thông tin về cho mình mức giá cụ thể sau ạ.
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="comment">
+            <!-- <form action="" class="form-comment">
+                        <textarea name="" id="" cols="60" rows="10" placeholder="Mời bạn chia sẻ cảm nhận"></textarea>
+                        <div class="rating commend-rating">
+                            <div class="quality">
+                                <span>☆</span>
+                                <span>Rất tệ</span>
+                            </div>
+                            <div class="quality">
+                                <span>☆</span>
+                                <span>Tệ</span>
+                            </div>
+                            <div class="quality">
+                                <span>☆</span>
+                                <span>Bình thường</span>
+                            </div>
+                            <div class="quality">
+                                <span>☆</span>
+                                <span>Tốt</span>
+                            </div>
+                            <div class="quality">
+                                <span>☆</span>
+                                <span>Rất tốt</span>
+                            </div>
+                        </div>
+                    </form> -->
+            <div class="btn-submit-comment">
+                <a href="">Gửi bài đánh giá</a>
+            </div>
+        </div>
+    </div>
+    {{!-- <div class="box">
+        <ul class="pagination">
+            <li><a href=""><i class='bx bx-chevron-left'></i></a></li>
+            <li><a href="" class="pagination-active">1</i></a></li>
+            <li><a href="">2</i></a></li>
+            <li><a href="">3</i></a></li>
+            <li><a href="">4</i></a></li>
+            <li><a href="">5</i></a></li>
+            <li><a href=""><i class='bx bx-chevron-right'></i></a></li>
+        </ul>
+    </div> --}}
+</div>
+<script src="../js/cartProduct.js"></script>

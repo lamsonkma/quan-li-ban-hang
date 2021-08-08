@@ -1,0 +1,52 @@
+<div class="section">
+    <form action="/signin" method="POST" class="form-login" id="form">
+        <a href="#" class="form-header">
+            <span>LSShop</span>
+        </a>
+
+        <div class="form-group">
+            <span class="form-group-title"></span>
+            <input type="text" placeholder="UserName" class="form-input" id="userName" name="userName">
+            <span class="form-icon"></span>
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Password" class="form-input" id="password" name="password">
+            <span class="form-icon"></span>
+
+        </div>
+        <div class="form-group">
+            <span class="form-icon-err-msg">
+                {{#if err.[0].userName}}
+                {{err.[0].userName}}
+                {{/if}}
+            </span>
+            <span class="form-icon-err-msg">
+                {{#if err.[0].password}}
+                {{err.[0].password}}
+                {{/if}}
+            </span>
+        </div>
+        <div class="form-btn">
+            <button class="btn btn-submit" type="submit">Sign in</button>
+        </div>
+        <span class="form-delimiter">or connect with</span>
+        <div class="form-social">
+            <a href="" class="form-social-item facebook">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="" class="form-social-item google">
+                <i class='bx bxl-google'></i>
+            </a>
+            <a href="" class="form-social-item twitter">
+                <i class='bx bxl-twitter'></i>
+            </a>
+        </div>
+        <span class="form-txt">
+            Do have an account?
+            <a href="/signup">Sign up</a>
+        </span>
+        <span class="form-txt">
+            <a href="#"> Forgot password</a>
+        </span>
+    </form>
+</div>

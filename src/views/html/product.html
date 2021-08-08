@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- begin font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- end font -->
+    <!-- begin icon -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- end icon -->
+    <!-- begin owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end owl -->
+    <!-- begin style css -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/gird.css">
+    <!-- end style css -->
+    <title>LSShop</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="header-wrapper-top">
+                <ul class="header-top-list">
+                    <li class="header-top-item">
+                        <a href="#">+84373376457</a>
+                    </li>
+                    <li class="header-top-item">
+                        <a href="#">lamsonkma@gmail.com</a>
+                    </li>
+                </ul>
+                <ul class="header-top-list">
+                    <li class="header-top-item top-down">
+                        <a href="#">Bạn đang xem tại</a>
+                        <span class="down"></span>
+                        <ul class="header-top-item-content">
+                            <li><a href="">Hà Nội</a></li>
+                            <li><a href="">Đà Nẵng</a></li>
+                            <li><a href="">Hồ Chí Minh</a></li>
+                        </ul>
+                    </li>
+                    <li class="header-top-item">
+                        <a href="#">Tuyển dụng</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-wrapper-container">
+                <div class="header-wrapper-main">
+                    <a href="#" class="logo">LSShop</a>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <div class="header-container">
+                        <ul class="header-container-list">
+                            <li class="header-container-item">
+                                <a href="#" class="user">
+                                    <i class='bx bxs-user-circle'></i>
+                                </a>
+                                <!-- <div class="infors-user">
+                                    <ul class="infos-user-list">
+                                        <li class="infors-user-item">Đăng nhập</li>
+                                        <li class="infors-user-item">Đăng xuất</li>
+                                        <li class="infors-user-item">Thông tin</li>
+                                    </ul>
+                                </div> -->
+                            </li>
+                            <li class="header-container-item"><a href="#" class="notification"><i
+                                        class='bx bxs-bell-ring'></i></a></li>
+                            <li class="header-container-item"><a href="#" class="cart"><i class='bx bxs-cart'></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrapper-footer">
+                <div class="header-footer-main">
+                    <ul class="header-footer-list">
+                        <li class="header-footer-item"><a href=""><i class='bx bx-tab'></i>Điện thoại</a></li>
+                        <li class="header-footer-item"><a href=""><i class='bx bx-laptop'></i>Laptop</a></li>
+                        <li class="header-footer-item item-down"></i><a href=""><i class='bx bx-headphone'></i>Phụ
+                                kiện<span class="down"></span></a></span>
+                            <div class="footer-down">
+                                <ul class="footer-down-list">
+                                    <li class="footer-down-item item-title">Phụ kiện di động</li>
+                                    <li class="footer-down-item"><a href="">Sạc, cáp</a></li>
+                                    <li class="footer-down-item"><a href="">Miếng dán màn hình</a></li>
+                                    <li class="footer-down-item"><a href="">Ốp lưng</a></li>
+                                    <li class="footer-down-item"><a href="">Giá đỡ</a></li>
+                                    <li class="footer-down-item"><a href="">Túi chống nước</a></li>
+                                </ul>
+                                <ul class="footer-down-list">
+                                    <li class="footer-down-item item-title">Phụ kiện máy tính</li>
+                                    <li class="footer-down-item"><a href="">Balo, túi chống sốc</a></li>
+                                    <li class="footer-down-item"><a href="">Miếng lót bàn phím</a></li>
+                                    <li class="footer-down-item"><a href="">Chuột máy tính</a></li>
+                                    <li class="footer-down-item"><a href="">Ổ cứng di động</a></li>
+                                    <li class="footer-down-item"><a href="">Loa</a></li>
+                                </ul>
+                                <ul class="footer-down-list">
+                                    <li class="footer-down-item item-title">Thương hiệu</li>
+                                    <li class="footer-down-item"><a href="">Apple</a></li>
+                                    <li class="footer-down-item"><a href="">Samsung</a></li>
+                                    <li class="footer-down-item"><a href="">Xiaomi</a></li>
+                                    <li class="footer-down-item"><a href="">Sony</a></li>
+                                    <li class="footer-down-item"><a href="">Oppo</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-footer-item"><a href=""><i class='bx bxs-watch-alt'></i>Đồng hồ</a></li>
+                        <li class="header-footer-item"><a href="">Máy cũ</a></li>
+                        <li class="header-footer-item"><a href="">Thẻ cào</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="section">
+            <div class="product-detail-main">
+                <div class="box">
+                    <div class="breadcrumb">
+                        <a href="./index.html">Trang chủ</a>
+                        <span><i class='bx bxs-chevrons-right'></i></span>
+                        <a href="#">Phụ kiện</a>
+                        <span><i class='bx bxs-chevrons-right'></i></span>
+                        <a href="./product.html">Sạc dự phòng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="filter">
+                <ul class="filter-list">
+                    <li class="filter-item producer">Hãng<span class="down"></span>
+                        <div class="filter-menu">
+                            <ul class="filter-menu-list">
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/Anker57-b_11.png" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/Energizer57-b_50.jpg" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/AUKEY57-b_21.png" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/Xmobile57-b_42.jpg" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/Samsung57-b_50.png" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/logo-xiaomi-220x48-6.png" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/eValu57-b_51.jpg" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/eSaver57-b_47.jpg" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/AVA57-b_50.jpg" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/Mbest57-b_9.jpg" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/iWalk57-b_1.png" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/Sony57-b_43.jpg" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/220-48-220x48.jpg" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/OPPO42-b5-220x48.jpg" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/220-48-220x48-3.jpg" alt=""></a></li>
+                                <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/220-48-220x48-10.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="filter-item">Giá<span class="down"></span>
+                        <div class="filter-menu">
+                            <ul class="filter-menu-list">
+                                <li class="filter-menu-item"><a href="#">Dưới 300.000đ</a></li>
+                                <li class="filter-menu-item"><a href="#">Từ 300.000đ - 500.000đ</a></li>
+                                <li class="filter-menu-item"><a href="#">Từ 500.000đ - 700.000đ</a></li>
+                                <li class="filter-menu-item"><a href="#">Trên 700.000đ</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="filter-item">Dung lượng<span class="down"></span>
+                        <div class="filter-menu">
+                            <ul class="filter-menu-list">
+                                <li class="filter-menu-item"><a href="#">7.500mAh</a></li>
+                                <li class="filter-menu-item"><a href="#">10.000mAh</a></li>
+                                <li class="filter-menu-item"><a href="#">Từ 15.000mAh</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="filter-item">Công nghệ<span class="down"></span>
+                        <div class="filter-menu">
+                            <ul class="filter-menu-list">
+                                <li class="filter-menu-item"><a href="#">Sạc không dây</a></li>
+                                <li class="filter-menu-item"><a href="#">Sạc nhanh</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="product-main">
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/57/229278/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg"
+                            alt="">
+                    </div>
+                    <div class="product-infos">
+                        <div class="product-title delay-2">Pin sạc dự phòng Polymer 10.000 mAh AVA PJ JP191S</div>
+                        <div class="product-info delay-2">
+                            <p class="price-old">450.000₫</p>
+                            <span class="percent">-44%</span>
+                        </div>
+                        <p class="price-curent delay-2">250.000₫</p>
+                        <div class="product-rating delay-2">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                            <p class="product-rating-total">120</p>
+                        </div>
+                        <div class="btn-hover delay-2">
+                            <a href="#">Xem ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <ul class="pagination">
+                    <li><a href=""><i class='bx bx-chevron-left'></i></a></li>
+                    <li><a href="" class="pagination-active">1</i></a></li>
+                    <li><a href="">2</i></a></li>
+                    <li><a href="">3</i></a></li>
+                    <li><a href="">4</i></a></li>
+                    <li><a href="">5</i></a></li>
+                    <li><a href=""><i class='bx bx-chevron-right'></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="section">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-3">
+                        <ul class="footer-menu-list">
+                            <li class="footer-menu-item"><a href="">Lịch sử mua hàng</a></li>
+                            <li class="footer-menu-item"><a href="">Cộng tác bán hàng cùng TGDĐ</a></li>
+                            <li class="footer-menu-item"><a href="">Tìm hiểu về mua trả góp</a></li>
+                            <li class="footer-menu-item"><a href="">Chính sách bảo hành</a></li>
+                            <li class="footer-menu-item"><a href="">Giao hàng & Thanh toán</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="footer-menu-list">
+                            <li class="footer-menu-item"><a href="">Giới thiệu công ty (KMA.vn)</a></li>
+                            <li class="footer-menu-item"><a href="">Tuyển dụng</a></li>
+                            <li class="footer-menu-item"><a href="">Gửi góp ý, khiếu nại</a></li>
+                            <li class="footer-menu-item"><a href="">Hướng dẫn mua online</a></li>
+                            <li class="footer-menu-item"><a href="">Nội quy cửa hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="footer-menu-list">
+                            <li class="footer-menu-item"><a href="">Tổng đài hỗ trợ (Miễn phí gọi)</a></li>
+                            <li class="footer-menu-item"><a href="">Gọi mua: 0373376457 (7:30 - 22:00)</a></li>
+                            <li class="footer-menu-item"><a href="">Kỹ thuật: 0373376457 (7:30 - 22:00)</a></li>
+                            <li class="footer-menu-item"><a href="">Khiếu nại: 0373376457 (8:00 - 21:30)</a></li>
+                            <li class="footer-menu-item"><a href="">Bảo hành: 0373376457 (8:00 - 21:00)</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer-social">
+                            <a href="" class="link"><i class='bx bxl-facebook fb'></i>facebook</a>
+                            <a href="" class="link"><i class='bx bxl-youtube yt'></i>youtube</a>
+                        </div>
+                        <div class="footer-application">
+                            <a href=""><img
+                                    src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/f4f5426ce757aea491dce94201560583.png"
+                                    alt=""></a>
+                            <a href=""><img
+                                    src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/39f189e19764dab688d3850742f13718.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="messenger">
+        <a href="">
+            <i class='bx bx-comment-detail'></i>
+            <span>Góp ý</span>
+        </a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/product.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<div class="section">
+    <div class="product-detail-main">
+        <div class="box">
+            <div class="breadcrumb">
+                <a href="./index.html">Trang chủ</a>
+                <span><i class='bx bxs-chevrons-right'></i></span>
+                <a href="#">{{data.[0].category}}</a>
+                {{!-- <span><i class='bx bxs-chevrons-right'></i></span>
+                <a href="./product.html">Sạc dự phòng</a> --}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="filter">
+        <ul class="filter-list">
+            <li class="filter-item producer">Hãng<span class="down"></span>
+                <div class="filter-menu">
+                    <ul class="filter-menu-list">
+                        <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/Anker57-b_11.png"
+                                    alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img
+                                    src="https://cdn.tgdd.vn/Brand/1/Energizer57-b_50.jpg" alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/AUKEY57-b_21.png"
+                                    alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img
+                                    src="https://cdn.tgdd.vn/Brand/1/Xmobile57-b_42.jpg" alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img
+                                    src="https://cdn.tgdd.vn/Brand/1/Samsung57-b_50.png" alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img
+                                    src="https://cdn.tgdd.vn/Brand/1/logo-xiaomi-220x48-6.png" alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/eValu57-b_51.jpg"
+                                    alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img
+                                    src="https://cdn.tgdd.vn/Brand/1/eSaver57-b_47.jpg" alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/AVA57-b_50.jpg"
+                                    alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/Mbest57-b_9.jpg"
+                                    alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/iWalk57-b_1.png"
+                                    alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img src="https://cdn.tgdd.vn/Brand/1/Sony57-b_43.jpg"
+                                    alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img
+                                    src="https://cdn.tgdd.vn/Brand/1/220-48-220x48.jpg" alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img
+                                    src="https://cdn.tgdd.vn/Brand/1/OPPO42-b5-220x48.jpg" alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img
+                                    src="https://cdn.tgdd.vn/Brand/1/220-48-220x48-3.jpg" alt=""></a></li>
+                        <li class="filter-menu-item"><a href="#"><img
+                                    src="https://cdn.tgdd.vn/Brand/1/220-48-220x48-10.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="filter-item">Giá<span class="down"></span>
+                <div class="filter-menu">
+                    <ul class="filter-menu-list">
+                        <li class="filter-menu-item"><a href="#">Dưới 300.000đ</a></li>
+                        <li class="filter-menu-item"><a href="#">Từ 300.000đ - 500.000đ</a></li>
+                        <li class="filter-menu-item"><a href="#">Từ 500.000đ - 700.000đ</a></li>
+                        <li class="filter-menu-item"><a href="#">Trên 700.000đ</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="filter-item">Dung lượng<span class="down"></span>
+                <div class="filter-menu">
+                    <ul class="filter-menu-list">
+                        <li class="filter-menu-item"><a href="#">7.500mAh</a></li>
+                        <li class="filter-menu-item"><a href="#">10.000mAh</a></li>
+                        <li class="filter-menu-item"><a href="#">Từ 15.000mAh</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="filter-item">Công nghệ<span class="down"></span>
+                <div class="filter-menu">
+                    <ul class="filter-menu-list">
+                        <li class="filter-menu-item"><a href="#">Sạc không dây</a></li>
+                        <li class="filter-menu-item"><a href="#">Sạc nhanh</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section">
+    <div class="product-main">
+        {{#each data}}
+        <div class="product-item">
+            <div class="item-img">
+                <img src={{this.image.[0]}} alt="">
+            </div>
+            <div class="product-infos">
+                <div class="product-title delay-2">{{this.name}}</div>
+                <div class="product-info delay-2">
+                    <p class="price-old">{{this.price}}₫</p>
+                    <span class="percent">-44%</span>
+                </div>
+                <p class="price-curent delay-2">{{this.price}}₫</p>
+                <div class="product-rating delay-2">
+                    <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                    <p class="product-rating-total">120</p>
+                </div>
+                <div class="btn-hover delay-2">
+                    <a href="/product?category={{this.category}}&id={{this._id}}">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="box">
+        {{!-- <ul class="pagination">
+            <li><a href=""><i class='bx bx-chevron-left'></i></a></li>
+            <li><a href="" class="pagination-active">1</i></a></li>
+            <li><a href="">2</i></a></li>
+            <li><a href="">3</i></a></li>
+            <li><a href="">4</i></a></li>
+            <li><a href="">5</i></a></li>
+            <li><a href=""><i class='bx bx-chevron-right'></i></a></li>
+        </ul> --}}
+        <div class="pagination">
+
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../../js/paginationLibrary.js"></script>
+<script src="../../js/pagination.js"></script>

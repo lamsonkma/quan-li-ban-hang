@@ -1,0 +1,63 @@
+<div class="section">
+    <div class="listCart">
+        <div class="cart-header">
+            <div class="row">
+                <div class="col-6">
+                    <div class="cart-left">
+                        <div class="col-1"></div>
+                        <div class="col-11">Sản Phẩm</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="cart-right">
+                        <div class="col-3">Đơn Giá</div>
+                        <div class="col-3">Số Lượng</div>
+                        <div class="col-3">Số Tiền</div>
+                        <div class="col-3">Thao Tác</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-container">
+            {{#each data}}
+            <div class="row">
+                <div class="col-6">
+                    <div class="cart-left">
+                        <div class="col-1 checkbox"><input type="checkbox"></div>
+                        <div class="col-11">
+                            <div class="cart-img">
+                                <img src={{this.image.[0]}} alt="">
+                            </div>
+                            <span class="cart-name">{{this.name}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="cart-right">
+                        <div class="cart-detail">
+                            <div class="col-3 cart-price-one">{{this.price}}</div>
+                            <div class="col-3 product-quantity-wrapper">
+                                <span class="product-quantity-btn">
+                                    <i class='bx bx-minus-circle'></i>
+                                </span>
+                                <span class="product-quantity">1</span>
+                                <span class="product-quantity-btn">
+                                    <i class='bx bx-plus-circle'></i>
+                                </span>
+                            </div>
+                            <div class="col-3 cart-price-all">{{this.price}}</div>
+                            <div class="col-3 cart-delete"><button data={{this._id}}>Xóa</button></div>
+                        </div>
+                    </div>
+                </div>`
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+{{!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../js/cart.js"></script> --}}

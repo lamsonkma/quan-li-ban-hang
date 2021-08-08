@@ -1,0 +1,39 @@
+$(document).ready(()=>{
+    let navText=["<i class='bx bx-chevron-left'></i>","<i class='bx bx-chevron-right'></i>"];
+    $('#slider-top').owlCarousel({
+        loop:true,
+        nav:true,
+        items:1,
+        navText:navText,
+        autoplay:true,
+        autoplayTimeout: 5000,
+        dots:false
+    });
+    $('.list-product').owlCarousel({
+        nav:true,
+        navText:navText,
+        loop:true,
+        items:5,
+        center: true,
+        dots:false
+    })
+    $('.list-product-watchs').owlCarousel({
+        nav:true,
+        navText:navText,
+        loop:false,
+        items:4,
+        dots:false
+    })
+    $('.list-trademark').owlCarousel({
+        loop:false,
+        items:3,
+        dots:false
+    })
+    $('.product-new').owlCarousel({
+        nav:true,
+        navText:navText,
+        loop:false,
+        items:3,
+        dots:false
+    })
+})
