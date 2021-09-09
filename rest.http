@@ -1,0 +1,19 @@
+GET http://localhost:3000/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjkwMDYxNTIyMzAyYzExNzZhYWNiOCIsImlhdCI6MTYzMDMxMTQyNSwiZXhwIjoxNjMwMzExNDU1fQ.P_Hv2z4kgUmTvFflF3fiDm9WvwZQ1YOPI_ACrsAP4oI
+
+######
+
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+    "userName":"lamson2000",
+    "password":"lamsonkma2000"
+}
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjkwMDYxNTIyMzAyYzExNzZhYWNiOCIsImlhdCI6MTYzMDI0NjU2NCwiZXhwIjoxNjMwMzMyOTY0fQ.LfBPwY0t60bmjkPX8rw3UTxpmn52Go1_ruu9WU0pCRs"
+}

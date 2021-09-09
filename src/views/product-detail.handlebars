@@ -4,9 +4,9 @@
             <div class="breadcrumb">
                 <a href="/">Trang chủ</a>
                 <span><i class='bx bxs-chevrons-right'></i></span>
-                <a href="#">{{data.[0].category}}</a>
+                <a href="#">{{data.[0].category.name}}</a>
                 <span><i class='bx bxs-chevrons-right'></i></span>
-                <a href="#">{{data.[0].producer}}</a>
+                <a href="#">{{data.[0].producer.name}}</a>
             </div>
         </div>
         <div class="row">
@@ -33,7 +33,7 @@
                         <h1>{{this.name}}</h1>
                     </div>
                     <div class="product-info-detail">
-                        <span class="product-info-detail-title">Nhà Sản Xuất:{{this.producer}}</span>
+                        <span class="product-info-detail-title">Nhà Sản Xuất: {{this.producer.name}}</span>
                         <div class="rating product-info-detail-rating">
                             <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                         </div>

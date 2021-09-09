@@ -31,15 +31,26 @@
         </div>
         <span class="form-delimiter">or connect with</span>
         <div class="form-social">
-            <a href="" class="form-social-item facebook">
+            <div class="form-social-item facebook">
+                <i class='bx bxl-facebook'></i>
+            </div>
+            <div class="form-social-item g-signin2" data-onsuccess="onSignIn">
+                <i class='bx bxl-google'></i>
+                <div id="name"></div>
+            </div>
+            <div class="form-social-item twitter">
+                <i class='bx bxl-twitter'></i>
+            </div>
+            {{!-- <a href="" class="form-social-item facebook">
                 <i class='bx bxl-facebook'></i>
             </a>
             <a href="" class="form-social-item google">
-                <i class='bx bxl-google'></i>
+                <div class="g-signin2" data-onsuccess="onSignIn"><i class='bx bxl-google'></i></div>
+
             </a>
             <a href="" class="form-social-item twitter">
                 <i class='bx bxl-twitter'></i>
-            </a>
+            </a> --}}
         </div>
         <span class="form-txt">
             Do have an account?
@@ -50,3 +61,19 @@
         </span>
     </form>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    function onSignIn(googleUser) {
+        let id_token = googleUser.getAuthResponse().id_token;
+        $.ajax({
+            type: 'POST',
+            url: 'signin/auth',
+            data: JSON.stringify({ id_token: id_token }),
+            contentType: "application/json",
+        })
+            .then(result => {
+            })
+    }
+</script>

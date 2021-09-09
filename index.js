@@ -13,6 +13,7 @@ const routerCart = require("./src/router/cart");
 const routerSignin = require("./src/router/signin");
 const routerSignup = require("./src/router/signup");
 const routerUser = require("./src/router/user");
+const routerCheckPoint = require("./src/middleware/checkPoint");
 // end router
 // 
 const app = express();
@@ -67,10 +68,13 @@ app.set('views', path.join(__dirname, 'src', 'views'));
 // 
 app.use('/', routerIndex);
 app.use('/product', routerProduct);
-app.use('/cart',routerCart);
+app.use('/cart',routerCheckPoint.checkPoint,routerCart);
 app.use('/signin', routerSignin);
 app.use('/signup', routerSignup);
 app.use('/user', routerUser);
+
+
+
 db.connect();
 app.listen(port, () => {
     console.log('Sever listenting port:' + port);

@@ -61,22 +61,34 @@ $(document).ready(() => {
         
     })
     $('.product-quantity-btn').on('click', function () {
-        let val = parseInt($(this).closest('.product-quantity-wrapper').find('.product-quantity').html());
-        let totalPrice = parseInt($(this).closest('.cart-detail').find('.cart-price-one').html());
         if($(this).find('i').hasClass('bx-plus-circle')){
-            $(this).closest('.product-quantity-wrapper').find('.product-quantity').html(val+1);
-            val++;
-            $(this).closest('.cart-detail').find('.cart-price-all').html(val*totalPrice);       
-            $(this).closest('.cart-detail').find('.cart-price-all').html()
+            $.ajax({
+                type: 'post',
+                url: '/cart/addToCart',
+                data: JSON.stringify({ result: id }),
+                contentType: "application/json",
+            })
         }
         else if($(this).find('i').hasClass('bx-minus-circle')){
-            if(val === 0 ){}
-            else{
-                $(this).closest('.product-quantity-wrapper').find('.product-quantity').html(val-1);
-                val--;
-                $(this).closest('.cart-detail').find('.cart-price-all').html(val*totalPrice);
-                $(this).closest('.cart-detail').find('.cart-price-all').html();
-            }
+            console.log(this);
         }
+    })
+    $('.submit-order-cart div').on('click',function(){
+        let listOrder = [];
+        $.each($("input[type='checkbox']:checked"), function(){
+            listOrder.push($(this).attr('id'));
+        });
+        $.ajax({
+            type: 'post',
+            url: '/cart/order',
+            data: JSON.stringify({ listOrder: listOrder }),
+            contentType: "application/json",
+        }).then(result=>{
+            if(result.task === 'save order success'){
+                location.reload();
+            }
+        }).catch(err=>{
+            console.log(err);
+        })
     })
 })

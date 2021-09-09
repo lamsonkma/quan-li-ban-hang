@@ -44,12 +44,16 @@ function addToCart(id) {
             //     data: JSON.stringify({ result: result[0]._id }),
             //     contentType: "application/json",
             // })
-            if(result){
+            console.log(result);
+            if(result.task){
                 $('.cart-number-product').html(result.number).css({"display":"block"});
                 $('.btn-add-cart button').css({"background-color":"rgb(0, 0, 0 , 0.5)"})
                 $('.btn-add-cart button span').html(result.task).css({"color":"rgb(0, 255, 0)"});
                 $('.btn-add-cart button i').css({"visibility": "visible","opacity": "1"});
                 // $('.btn-add-cart button').html(result.task);
+            }
+            else{
+                window.location.replace("signin")
             }
         })
         .fail(function (jqXHR, textStatus, errorThrown) {

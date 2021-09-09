@@ -822,6 +822,13 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
+
+.sort{
+    flex-direction: column;
+}
+
+
+
 .filter-menu-item{
     list-style: none;
     margin: 0.5rem;
@@ -909,6 +916,27 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.submit-order-cart{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.submit-order-cart div{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+    background-color: rgb(255, 243, 227);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.submit-order-cart div:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
 /* login */
 .form-login{
@@ -1024,9 +1052,22 @@ header {
 .form-social-item.facebook{
     background-color: #0674e7;
 }
-.form-social-item.google{
+/* .form-social-item.google{
     background-color: rgb(253, 53, 53);
+} */
+.form-social-item.google{
+    display: inline-block;
+    background: white;
+    color: #444;
+    width: 190px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
 }
+
+
+
 .form-social-item.twitter{
     background-color: #1da1f2;
 }

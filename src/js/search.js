@@ -12,7 +12,7 @@ function search(str) {
         }
         else {
             $.each(result, (index, value) => {
-                $('.result').append(`<a href=/product?category=${value.category}&id=${value._id}><span>${value.name}</span></a>`);
+                $('.result').append(`<a href=/product?category=${value.category.name}&id=${value._id}><span>${value.name}</span></a>`);
             })
         }
         // $(".search-result").css({ "opacity": "1", "visibility": "visible" });

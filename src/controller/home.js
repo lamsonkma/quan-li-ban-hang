@@ -1,12 +1,12 @@
-const modelProduct = require('../model/product');
+const modelProduct = require('../model/products');
 const db = require("../databse/connect");
 const page_size = 2;
 class home {
     home(req, res, next) {
-        modelProduct.find({}).lean().then(data => {
+        modelProduct.find({}).lean().populate('category').then(data => {
             let listSmartPhone = [], listLapTop = [], listAccessories = [];
             for (let i = 0; i < data.length; i++) {
-                if (data[i].category === 'phone') {
+                if (data[i].category.name === 'phone') {
                     listSmartPhone.push(data[i]);
                 }
                 else if (data[i].category === 'laptop') {
@@ -31,7 +31,7 @@ class home {
             formData.image = await req.body.image.split(',');
             console.log(formData);
             const product = new modelProduct(formData);
-            product.save();
+            // product.save();
             res.redirect('create');
         } catch (error) {
 
@@ -42,7 +42,7 @@ class home {
             let arr = [];
             let keySearch = req.body.str.toLowerCase();
             if (keySearch.length > 0) {
-                modelProduct.find({}).lean().then(results => {
+                modelProduct.find({}).populate('category').lean().then(results => {
                     results.forEach(result => {
                         if (result.name.toLowerCase().indexOf(keySearch) !== -1) {
                             arr.push(result);

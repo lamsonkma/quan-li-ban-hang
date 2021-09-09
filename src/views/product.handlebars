@@ -2,9 +2,9 @@
     <div class="product-detail-main">
         <div class="box">
             <div class="breadcrumb">
-                <a href="./index.html">Trang chủ</a>
+                <a href="/">Trang chủ</a>
                 <span><i class='bx bxs-chevrons-right'></i></span>
-                <a href="#">{{data.[0].category}}</a>
+                <a href="#">{{result.[0].category.name}}</a>
                 {{!-- <span><i class='bx bxs-chevrons-right'></i></span>
                 <a href="./product.html">Sạc dự phòng</a> --}}
             </div>
@@ -55,14 +55,41 @@
             <li class="filter-item">Giá<span class="down"></span>
                 <div class="filter-menu">
                     <ul class="filter-menu-list">
-                        <li class="filter-menu-item"><a href="#">Dưới 300.000đ</a></li>
-                        <li class="filter-menu-item"><a href="#">Từ 300.000đ - 500.000đ</a></li>
-                        <li class="filter-menu-item"><a href="#">Từ 500.000đ - 700.000đ</a></li>
-                        <li class="filter-menu-item"><a href="#">Trên 700.000đ</a></li>
+                        <a href="/product?category={{result.[0].category.name}}&sort&column=name$type=desc">
+                            <li class="filter-menu-item">Dưới 2 triệu</li>
+                        </a>
+                        <a href="/product?category={{result.[0].category.name}}&sort&column=name$type=desc">
+                            <li class="filter-menu-item">Từ 2 triệu - 4 triệu</li>
+                        </a>
+                        <a href="/product?category={{result.[0].category.name}}&sort&column=name$type=desc">
+                            <li class="filter-menu-item">Từ 4 triệu - 7 triệu</li>
+                        </a>
+                        <a href="/product?category={{result.[0].category.name}}&sort&column=name$type=desc">
+                            <li class="filter-menu-item">Từ 7 triệu - 13 triệu</li>
+                        </a>
+                        <a href="/product?category={{result.[0].category.name}}&sort&column=name$type=desc">
+                            <li class="filter-menu-item">Từ 13 triệu - 20 triệu</li>
+                        </a>
+                        <a href="/product?category={{result.[0].category.name}}&sort&column=name$type=desc">
+                            <li class="filter-menu-item">Trên 20 triệu</li>
+                        </a>
                     </ul>
                 </div>
             </li>
-            <li class="filter-item">Dung lượng<span class="down"></span>
+            <li class="filter-item">Sắp xếp<span class="down"></span>
+                <div class="filter-menu">
+                    <ul class="filter-menu-list sort">
+                        <a href="/product?category={{result.[0].category.name}}&sort=price&type=asc">
+                            <li class="filter-menu-item">Giá: Thấp đến Cao</li>
+                        </a>
+                        <a href="/product?category={{result.[0].category.name}}&sort=price&type=desc">
+                            <li class="filter-menu-item">Giá: Cao đến Thấp</li>
+                        </a>
+                    </ul>
+                </div>
+            </li>
+
+            {{!-- <li class="filter-item">Dung lượng<span class="down"></span>
                 <div class="filter-menu">
                     <ul class="filter-menu-list">
                         <li class="filter-menu-item"><a href="#">7.500mAh</a></li>
@@ -78,13 +105,13 @@
                         <li class="filter-menu-item"><a href="#">Sạc nhanh</a></li>
                     </ul>
                 </div>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </div>
 <div class="section">
     <div class="product-main">
-        {{#each data}}
+        {{#each result}}
         <div class="product-item">
             <div class="item-img">
                 <img src={{this.image.[0]}} alt="">
@@ -103,7 +130,7 @@
                     <p class="product-rating-total">120</p>
                 </div>
                 <div class="btn-hover delay-2">
-                    <a href="/product?category={{this.category}}&id={{this._id}}">Xem ngay</a>
+                    <a href="/product?category={{this.category.name}}&id={{this._id}}">Xem ngay</a>
                 </div>
             </div>
         </div>
@@ -125,7 +152,7 @@
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="../../js/paginationLibrary.js"></script>
 <script src="../../js/pagination.js"></script>
